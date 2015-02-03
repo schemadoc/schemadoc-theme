@@ -1,0 +1,24 @@
+
+
+<h2>Tables</h2>
+
+<ul>
+{% for table in site.data.schema.tables %}
+  <li>{{ table.name }}
+  </li>
+{% endfor %}
+</ul>
+
+
+{% for table in site.data.schema.tables %}
+<h3>{{ table.name }}</h3>
+<ul>
+  {% for field in table.fields %}
+    <li>
+      {{ field.name }} | {{ field.type }} | {{ field.null }} | {{ field.default }}
+    </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+</ul>
+
