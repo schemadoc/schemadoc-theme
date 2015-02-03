@@ -9,7 +9,7 @@ Schema Book Template - Database Docu for Tables, Fields, etc.
 
 Replace the `schema.json` sample in the `_data` folder with your own and
 change the `site.title` and `site.url` settings in `_config.yml` to
-match your own e.g.
+match your own e.g.:
 
 ```
 title: 'Your Database Schema'
