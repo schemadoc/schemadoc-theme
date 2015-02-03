@@ -1,6 +1,49 @@
 ---
 ---
 
-// add styles here
+@import 'settings';
 
+
+html {
+  font-family: $font-family;
+}
+
+body {
+  color:            $body-color;
+  background-color: $body-background-color;
+}
+
+//////////////
+// Links
+
+a {
+  color:           $link-color;
+  text-decoration: none;
+  
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+//////////////////////
+// Tables
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid $table-border-color;
+  border-collapse: collapse;
+
+  td,
+  th {
+   padding: .25rem .5rem;
+   border: 1px solid $table-border-color;
+  }
+
+  tr:nth-child(odd) td,
+  tr:nth-child(odd) th {
+    background-color: $table-odd-background-color;
+  }
+}
 

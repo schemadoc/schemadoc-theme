@@ -5,11 +5,11 @@ title: Tables
 
 <h2>Tables</h2>
 
-<ul>
 {% for table in site.data.schema.tables %}
-  <li><a href="#{{table.name}}">{{ table.name }}</a></li>
+  <a href="#{{table.name}}">{{ table.name }}</a>  •
 {% endfor %}
-</ul>
+
+<!-- todo/fix: do not include bullet for first (or last) table -->
 
 
 {% for table in site.data.schema.tables %}
@@ -21,8 +21,12 @@ title: Tables
     <tr>
       <td>{{ field.name }}</td>
       <td>{{ field.type }}</td>
-      <td>{{ field.null }}</td>
+      <td>{% if field.null %}
+            NOT NULL
+          {% end %}
+      </td>
       <td>{{ field.default }}</td>
+      <td><!-- comments - to be done --></td>
     </tr>
   {% endfor %}
 </table>
