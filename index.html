@@ -7,20 +7,25 @@ title: Tables
 
 <ul>
 {% for table in site.data.schema.tables %}
-  <li>{{ table.name }}</li>
+  <li><a href="#{{table.name}}">{{ table.name }}</a></li>
 {% endfor %}
 </ul>
 
 
 {% for table in site.data.schema.tables %}
-<h3>{{ table.name }}</h3>
-<ul>
+  
+<a name="{{table.name}}"></a><h3>Table {{ table.name }}</h3>
+
+<table>
   {% for field in table.fields %}
-    <li>
-      {{ field.name }} | {{ field.type }} | {{ field.null }} | {{ field.default }}
-    </li>
+    <tr>
+      <td>{{ field.name }}</td>
+      <td>{{ field.type }}</td>
+      <td>{{ field.null }}</td>
+      <td>{{ field.default }}</td>
+    </tr>
   {% endfor %}
-</ul>
+</table>
+
 {% endfor %}
-</ul>
 

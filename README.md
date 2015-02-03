@@ -1,6 +1,7 @@
-# schema
+# schema - Schema Book Template
 
-Schema Book Template - Database Docu for Tables, Fields, etc.
+Database docu for tables, columns, etc.; see a live demo @
+[`book-templates.github.io/schema`](http://book-templates.github.io/schema/)
 
 
 ## Usage
