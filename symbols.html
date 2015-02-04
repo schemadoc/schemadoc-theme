@@ -1,0 +1,27 @@
+---
+layout: default
+title: Symbols A-Z
+---
+
+<h2>Symbols A-Z</h2>
+
+{% for symbol in site.data.symbols %}
+  <a href="#{{symbol.name}}">{{ symbol.name }}</a>  •
+{% endfor %}
+
+<!-- todo/fix: do not include bullet for first (or last) table -->
+
+
+{% for symbol in site.data.symbols %}
+<a name="{{symbol.name}}"></a><h3>{{ symbol.name }}</h3>
+
+<div>
+{% for table in symbol.tables %}
+  {{ table.name }}
+{% endfor %}
+{% for column in symbol.columns %}
+  {{ column.name }}
+{% endfor %}
+</div>  
+
+{% endfor %}
