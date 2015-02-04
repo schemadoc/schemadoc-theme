@@ -1,14 +1,14 @@
-# schema - Schema Book Template
+# schema - Database Schemata Book Template
 
-Database docu for tables, columns, etc.; see a live demo @
+Docu for tables, columns, etc.; see a live demo @
 [`book-templates.github.io/schema`](http://book-templates.github.io/schema/)
 
 
 ## Usage
 
-### Step 1:  Add your schema and configure your site settings
+### Step 1:  Add your database schemata and configure your site settings
 
-Replace the `schema.json` sample in the `_data` folder with your own and
+Replace the `database.json` sample in the `_data` folder with your own and
 change the `site.title` and `site.url` settings in `_config.yml` to
 match your own e.g.:
 
