@@ -3,16 +3,20 @@ layout: default
 title: Tables
 ---
 
-<h2>Tables</h2>
+<h2>Database Schemata</h2>
 
-{% for table in site.data.schema.tables %}
-  <a href="#{{table.name}}">{{ table.name }}</a>  •
+{% for schema in site.data.database.schemas %}
+<h3>{{ schema.name }} Tables</h3>
+  {% for table in schema.tables %}
+     <a href="#{{table.name}}">{{ table.name }}</a>  •
+  {% endfor %}
 {% endfor %}
 
 <!-- todo/fix: do not include bullet for first (or last) table -->
 
 
-{% for table in site.data.schema.tables %}
+{% for schema in site.data.database.schemas %}
+{% for table in schema.tables %}
   
 <a name="{{table.name}}"></a><h3>Table {{ table.name }}</h3>
 
@@ -22,21 +26,22 @@ title: Tables
     <th>Type</th>
     <th></th>
     <th>Default</th>
-    <th>Comments</th>
+    <th>Description</th>
   </tr>
-  {% for field in table.fields %}
+  {% for column in table.columns %}
     <tr>
-      <td>{{ field.name }}</td>
-      <td>{{ field.type }}</td>
-      <td>{% if field.null %}
+      <td>{{ column.name }}</td>
+      <td>{{ column.type }}</td>
+      <td>{% if column.null %}
             NOT NULL
           {% endif %}
       </td>
-      <td>{{ field.default }}</td>
+      <td>{{ column.default }}</td>
       <td><!-- comments - to be done --></td>
     </tr>
   {% endfor %}
 </table>
 
+{% endfor %}
 {% endfor %}
 
