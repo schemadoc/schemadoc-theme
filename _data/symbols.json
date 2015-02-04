@@ -1,0 +1,537 @@
+[
+  {
+    "name": "A",
+    "tables": [
+
+    ],
+    "columns": [
+      "alt_names in cities",
+      "area in cities",
+      "alt_names in continents",
+      "alt_names in countries",
+      "area in countries",
+      "address in grounds",
+      "app in logs",
+      "abbr in regions",
+      "alt_names in regions",
+      "area in regions",
+      "auto in rounds",
+      "address in teams"
+    ]
+  },
+  {
+    "name": "B",
+    "tables": [
+      "badges"
+    ],
+    "columns": [
+      "born_at in persons"
+    ]
+  },
+  {
+    "name": "C",
+    "tables": [
+      "cities",
+      "continents",
+      "countries"
+    ],
+    "columns": [
+      "created_at in badges",
+      "code in cities",
+      "country_id in cities",
+      "city_id in cities",
+      "c in cities",
+      "created_at in cities",
+      "created_at in continents",
+      "code in countries",
+      "continent_id in countries",
+      "country_id in countries",
+      "c in countries",
+      "created_at in countries",
+      "config in events",
+      "created_at in events",
+      "created_at in events_grounds",
+      "created_at in events_teams",
+      "city_id in games",
+      "created_at in games",
+      "created_at in goals",
+      "country_id in grounds",
+      "city_id in grounds",
+      "capacity in grounds",
+      "created_at in grounds",
+      "created_at in groups",
+      "created_at in groups_teams",
+      "created_at in langs",
+      "country_id in leagues",
+      "club in leagues",
+      "created_at in leagues",
+      "created_at in logs",
+      "created_at in names",
+      "code in persons",
+      "city_id in persons",
+      "country_id in persons",
+      "created_at in persons",
+      "created_at in places",
+      "created_at in props",
+      "created_at in races",
+      "completed in records",
+      "comment in records",
+      "created_at in records",
+      "code in regions",
+      "country_id in regions",
+      "created_at in regions",
+      "created_at in rosters",
+      "created_at in rounds",
+      "created_at in runs",
+      "created_at in seasons",
+      "created_at in taggings",
+      "created_at in tags",
+      "code in teams",
+      "country_id in teams",
+      "city_id in teams",
+      "club in teams",
+      "created_at in teams",
+      "code in tracks",
+      "city_id in tracks",
+      "country_id in tracks",
+      "created_at in tracks",
+      "country_id in usages",
+      "created_at in usages"
+    ]
+  },
+  {
+    "name": "D",
+    "tables": [
+
+    ],
+    "columns": [
+      "d in cities",
+      "d in countries"
+    ]
+  },
+  {
+    "name": "E",
+    "tables": [
+      "events",
+      "events_grounds",
+      "events_teams"
+    ],
+    "columns": [
+      "end_at in events",
+      "event_id in events_grounds",
+      "event_id in events_teams",
+      "event_id in groups",
+      "event_id in races",
+      "event_id in rosters",
+      "event_id in rounds",
+      "end_at in rounds"
+    ]
+  },
+  {
+    "name": "F",
+    "tables": [
+
+    ],
+    "columns": [
+      "fifa in countries"
+    ]
+  },
+  {
+    "name": "G",
+    "tables": [
+      "games",
+      "goals",
+      "grounds",
+      "groups",
+      "groups_teams"
+    ],
+    "columns": [
+      "ground_id in events_grounds",
+      "group_id in games",
+      "ground_id in games",
+      "game_id in goals",
+      "group_id in groups_teams",
+      "grade in tags"
+    ]
+  },
+  {
+    "name": "H",
+    "tables": [
+
+    ],
+    "columns": [
+      "home in games"
+    ]
+  },
+  {
+    "name": "I",
+    "tables": [
+
+    ],
+    "columns": [
+      "id in badges",
+      "id in cities",
+      "id in continents",
+      "id in countries",
+      "iso2 in countries",
+      "iso3 in countries",
+      "id in events",
+      "id in events_grounds",
+      "id in events_teams",
+      "id in games",
+      "id in goals",
+      "id in grounds",
+      "id in groups",
+      "id in groups_teams",
+      "id in langs",
+      "id in leagues",
+      "id in logs",
+      "id in names",
+      "id in persons",
+      "id in places",
+      "id in props",
+      "id in races",
+      "id in records",
+      "id in regions",
+      "iso in regions",
+      "id in rosters",
+      "id in rounds",
+      "id in runs",
+      "id in seasons",
+      "id in taggings",
+      "id in tags",
+      "id in teams",
+      "id in tracks",
+      "id in usages"
+    ]
+  },
+  {
+    "name": "J",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "K",
+    "tables": [
+
+    ],
+    "columns": [
+      "key in cities",
+      "key in continents",
+      "key in countries",
+      "key in events",
+      "key in games",
+      "knockout in games",
+      "key in grounds",
+      "key in langs",
+      "key in leagues",
+      "key in persons",
+      "kind in places",
+      "key in props",
+      "kind in props",
+      "key in regions",
+      "knockout in rounds",
+      "key in seasons",
+      "key in tags",
+      "key in teams",
+      "key in tracks"
+    ]
+  },
+  {
+    "name": "L",
+    "tables": [
+      "langs",
+      "leagues",
+      "logs"
+    ],
+    "columns": [
+      "league_id in badges",
+      "league_id in events",
+      "level in logs",
+      "lang in names",
+      "lat in places",
+      "lng in places",
+      "laps in records",
+      "lang_id in usages"
+    ]
+  },
+  {
+    "name": "M",
+    "tables": [
+
+    ],
+    "columns": [
+      "m in cities",
+      "motor in countries",
+      "minute in goals",
+      "msg in logs",
+      "minor in usages"
+    ]
+  },
+  {
+    "name": "N",
+    "tables": [
+      "names"
+    ],
+    "columns": [
+      "name in cities",
+      "name in continents",
+      "name in countries",
+      "net in countries",
+      "next_game_id in games",
+      "name in langs",
+      "name in names",
+      "name in persons",
+      "nationality_id in persons",
+      "name in places",
+      "name in regions",
+      "nuts in regions",
+      "name in tags",
+      "national in teams"
+    ]
+  },
+  {
+    "name": "O",
+    "tables": [
+
+    ],
+    "columns": [
+      "offset in goals",
+      "owngoal in goals",
+      "official in usages"
+    ]
+  },
+  {
+    "name": "P",
+    "tables": [
+      "persons",
+      "places",
+      "props"
+    ],
+    "columns": [
+      "place_id in cities",
+      "pop in cities",
+      "popm in cities",
+      "place_id in continents",
+      "place_id in countries",
+      "pop in countries",
+      "pos in games",
+      "play_at in games",
+      "postponed in games",
+      "play_at_v2 in games",
+      "play_at_v3 in games",
+      "prev_game_id in games",
+      "person_id in goals",
+      "penalty in goals",
+      "pos in groups",
+      "pid in logs",
+      "place_id in names",
+      "pos in races",
+      "person_id in records",
+      "pos in records",
+      "place_id in regions",
+      "pop in regions",
+      "person_id in rosters",
+      "pos in rosters",
+      "pos in rounds",
+      "pos in runs",
+      "parent_id in tags",
+      "percent in usages"
+    ]
+  },
+  {
+    "name": "Q",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "R",
+    "tables": [
+      "races",
+      "records",
+      "regions",
+      "rosters",
+      "rounds",
+      "runs"
+    ],
+    "columns": [
+      "region_id in cities",
+      "round_id in games",
+      "region_id in persons",
+      "race_id in records",
+      "run_id in records",
+      "race_id in runs",
+      "region_id in tracks"
+    ]
+  },
+  {
+    "name": "S",
+    "tables": [
+      "seasons"
+    ],
+    "columns": [
+      "season_id in badges",
+      "slug in continents",
+      "slug in countries",
+      "s in countries",
+      "season_id in events",
+      "start_at in events",
+      "sources in events",
+      "score1 in games",
+      "score2 in games",
+      "score1et in games",
+      "score2et in games",
+      "score1p in games",
+      "score2p in games",
+      "score1i in games",
+      "score2i in games",
+      "score1ii in games",
+      "score2ii in games",
+      "score1 in goals",
+      "score2 in goals",
+      "synonyms in grounds",
+      "since in grounds",
+      "synonyms in persons",
+      "start_at in races",
+      "state in records",
+      "start_at in rounds",
+      "start_at in runs",
+      "slug in tags",
+      "synonyms in teams",
+      "since in teams",
+      "synonyms in tracks"
+    ]
+  },
+  {
+    "name": "T",
+    "tables": [
+      "taggings",
+      "tags",
+      "teams",
+      "tracks"
+    ],
+    "columns": [
+      "team_id in badges",
+      "title in badges",
+      "team3 in events",
+      "team_id in events_teams",
+      "team1_id in games",
+      "team2_id in games",
+      "title in grounds",
+      "title in groups",
+      "team_id in groups_teams",
+      "title in leagues",
+      "tag in logs",
+      "tid in logs",
+      "ts in logs",
+      "track_id in races",
+      "time in records",
+      "timeline in records",
+      "team_id in rosters",
+      "title in rounds",
+      "title2 in rounds",
+      "title in seasons",
+      "tag_id in taggings",
+      "taggable_id in taggings",
+      "taggable_type in taggings",
+      "title in teams",
+      "title2 in teams",
+      "title in tracks"
+    ]
+  },
+  {
+    "name": "U",
+    "tables": [
+      "usages"
+    ],
+    "columns": [
+      "updated_at in badges",
+      "updated_at in cities",
+      "updated_at in continents",
+      "updated_at in countries",
+      "updated_at in events",
+      "updated_at in events_grounds",
+      "updated_at in events_teams",
+      "updated_at in games",
+      "updated_at in goals",
+      "updated_at in grounds",
+      "updated_at in groups",
+      "updated_at in groups_teams",
+      "updated_at in langs",
+      "updated_at in leagues",
+      "updated_at in logs",
+      "updated_at in names",
+      "updated_at in persons",
+      "updated_at in places",
+      "updated_at in props",
+      "updated_at in races",
+      "updated_at in records",
+      "updated_at in regions",
+      "updated_at in rosters",
+      "updated_at in rounds",
+      "updated_at in runs",
+      "updated_at in seasons",
+      "updated_at in taggings",
+      "updated_at in tags",
+      "updated_at in teams",
+      "updated_at in tracks",
+      "updated_at in usages"
+    ]
+  },
+  {
+    "name": "V",
+    "tables": [
+
+    ],
+    "columns": [
+      "value in props"
+    ]
+  },
+  {
+    "name": "W",
+    "tables": [
+
+    ],
+    "columns": [
+      "wikipedia in countries",
+      "winner in games",
+      "winner90 in games",
+      "web in teams"
+    ]
+  },
+  {
+    "name": "X",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "Y",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  },
+  {
+    "name": "Z",
+    "tables": [
+
+    ],
+    "columns": [
+
+    ]
+  }
+]
