@@ -4,7 +4,7 @@ title: Tables
 ---
 
 {% for schema in site.data.database.schemas %}
-  {{ schema.name }} • 
+  <a href="#{{schema.name}}">{{ schema.name }}</a> • 
 {% endfor %}
 
 
@@ -20,7 +20,7 @@ title: Tables
 
 
 {% for schema in site.data.database.schemas %}
-<h2>{{ schema.name }} Tables</h2>
+<a name="{{ schema.name }}"></a><h2>{{ schema.name }} Tables</h2>
   {% for table in schema.tables %}
      <a href="#{{table.name}}">{{ table.name }}</a>  •
   {% endfor %}
