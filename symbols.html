@@ -6,7 +6,7 @@ title: Symbols A-Z
 <h2>Symbols A-Z</h2>
 
 {% for symbol in site.data.symbols %}
-  <a href="#{{symbol.name}}">{{ symbol.name }}</a>
+  <a href="#{{symbol.name}}">{{ symbol.name }}</a>  •  
 {% endfor %}
 
 <!-- todo/fix: do not include bullet for first (or last) table -->
@@ -27,14 +27,16 @@ title: Symbols A-Z
 {% if symbol.columns.size > 0 %}
 <div class='columns'>
 {% for column in symbol.columns %}
-  {{ column.name }}
-   <span class='tables'>
-   (in
-    {% for table in column.tables %}
-      {{ table }}
-    {% endfor %}
-   ) •
-   </span>
+  <div class='column'>
+    {{ column.name }}
+     <span class='tables'>
+     (
+       {% for table in column.tables %}
+         {{ table }}
+       {% endfor %}
+     )
+    </span>
+  </div>
 {% endfor %}
 </div>
 {% endif %}

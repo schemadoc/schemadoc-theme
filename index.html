@@ -18,7 +18,14 @@ title: Tables
 <!-- todo/fix: do not include bullet for first (or last) table -->
 
 
+
 {% for schema in site.data.database.schemas %}
+<h2>{{ schema.name }} Tables</h2>
+  {% for table in schema.tables %}
+     <a href="#{{table.name}}">{{ table.name }}</a>  •
+  {% endfor %}
+
+
 {% for table in schema.tables %}
   
 <a name="{{table.name}}"></a><h3>Table {{ table.name }}</h3>
