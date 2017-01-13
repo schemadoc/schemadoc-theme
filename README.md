@@ -1,7 +1,7 @@
-# schema-theme
+# schemadoc-theme
 
-Docu for tables, columns, etc.; see a live demo @
-[`schemadoc.github.io/schema-theme`](https://schemadoc.github.io/schema-theme)
+Database schmema docu for tables, columns, etc.; see a live demo @
+[`schemadoc.github.io/schemadoc-theme`](https://schemadoc.github.io/schemadoc-theme)
 
 
 ## Usage
