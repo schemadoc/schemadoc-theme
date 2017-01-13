@@ -1,10 +1,10 @@
 ---
+title:  Tables
 layout: default
-title: Tables
 ---
 
 {% for schema in site.data.database.schemas %}
-  <a href="#{{schema.name}}">{{ schema.name }}</a> • 
+  <a href="#{{schema.name}}">{{ schema.name }}</a> •
 {% endfor %}
 
 
@@ -27,7 +27,7 @@ title: Tables
 
 
 {% for table in schema.tables %}
-  
+
 <a name="{{table.name}}"></a><h3>Table {{ table.name }}</h3>
 
 <table>
@@ -54,4 +54,3 @@ title: Tables
 
 {% endfor %}
 {% endfor %}
-

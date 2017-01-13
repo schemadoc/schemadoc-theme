@@ -1,7 +1,7 @@
-# schema - Database Schemata Book Template
+# schema-theme
 
 Docu for tables, columns, etc.; see a live demo @
-[`book-templates.github.io/schema`](http://book-templates.github.io/schema/)
+[`schemadoc.github.io/schema-theme`](https://schemadoc.github.io/schema-theme)
 
 
 ## Usage
@@ -9,12 +9,11 @@ Docu for tables, columns, etc.; see a live demo @
 ### Step 1:  Add your database schemata and configure your site settings
 
 Replace the `database.json` sample in the `_data` folder with your own and
-change the `site.title` and `site.url` settings in `_config.yml` to
+change the `site.title` settings in `_config.yml` to
 match your own e.g.:
 
 ```
 title: 'Your Database Schema'
-url:   'http://example.com/schema'
 ```
 
 ### Step 2: Let Jekyll (or GitHub Pages) do the rest
@@ -29,6 +28,7 @@ Let Jekyll (or GitHub Pages) auto-generate your static site, that is, database s
 
 ## License
 
+![](https://publicdomainworks.github.io/buttons/zero88x31.png)
+
 The schema scripts and templates are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
-

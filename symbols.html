@@ -1,12 +1,12 @@
 ---
+title:  Symbols A-Z
 layout: default
-title: Symbols A-Z
 ---
 
 <h2>Symbols A-Z</h2>
 
 {% for symbol in site.data.symbols %}
-  <a href="#{{symbol.name}}">{{ symbol.name }}</a>  •  
+  <a href="#{{symbol.name}}">{{ symbol.name }}</a>  •
 {% endfor %}
 
 <!-- todo/fix: do not include bullet for first (or last) table -->
@@ -18,7 +18,7 @@ title: Symbols A-Z
 {% if symbol.tables.size > 0 %}
 <div class='tables'>
 {% for table in symbol.tables %}
-  {{ table }}  • 
+  {{ table }}  •
 {% endfor %}
 </div>
 {% endif %}
@@ -32,7 +32,7 @@ title: Symbols A-Z
      <span class='tables'>
      (
        {% for table in column.tables %}
-         {{ table }} • 
+         {{ table }} •
        {% endfor %}
      )
     </span>

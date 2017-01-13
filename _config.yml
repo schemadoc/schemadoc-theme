@@ -1,8 +1,4 @@
-###########
-# site.url, site.title
-
-title: 'Database Schema Docu'
-url:   'http://book-templates.github.io/schema'
+title: 'Sample Database Schema Docu'
 
 
 ########
@@ -17,8 +13,7 @@ sass:
 
 exclude:
 - README.md
-
+- LICENSE.md
 
 safe: true
 lsi: false
-

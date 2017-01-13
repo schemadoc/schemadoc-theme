@@ -3,13 +3,13 @@
 <head>
    <meta charset="utf-8">
    <title>{{ page.title }} - {{ site.title }}</title>
-   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css" >
+   <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
 </head>
 <body>
 
 <div class="nav">
-   <a href="{{ site.url }}/index.html">Tables</a> |
-   <a href="{{ site.url }}/symbols.html">Symbols A-Z</a>
+   <a href="{{ '/index.html'   | relative_url }}">Tables</a> |
+   <a href="{{ '/symbols.html' | relative_url }}">Symbols A-Z</a>
 </div>
 
 <h1>Database Schemata</h1>
