@@ -1,6 +1,6 @@
 # schemadoc-theme
 
-Database schmema docu for tables, columns, etc.; see a live demo @
+Database schema docu for tables, columns, etc.; see a live demo @
 [`schemadoc.github.io/schemadoc-theme`](https://schemadoc.github.io/schemadoc-theme)
 
 
