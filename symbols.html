@@ -16,7 +16,7 @@ layout: default
 {% if symbol.tables.size > 0 %}
 <div class='tables'>
 {% for table in symbol.tables %}
-  {{ table }}<a href="{{ '/#' append: table | relative_url }}" title="table {{ table }}">↩</a>{% unless forloop.last %} {% endunless %}
+  {{ table }}<a href="{{ '/#' | append: table | relative_url }}" title="table {{ table }}">↩</a>{% unless forloop.last %} {% endunless %}
 {% endfor %}
 </div>
 {% endif %}
