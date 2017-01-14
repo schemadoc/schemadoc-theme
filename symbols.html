@@ -6,10 +6,8 @@ layout: default
 <h2>Symbols A-Z</h2>
 
 {% for symbol in site.data.symbols %}
-  <a href="#{{symbol.name}}">{{ symbol.name }}</a>  •
+  <a href="#{{symbol.name}}">{{ symbol.name }}</a>{% unless forloop.last %}  •{% endunless %}
 {% endfor %}
-
-<!-- todo/fix: do not include bullet for first (or last) table -->
 
 
 {% for symbol in site.data.symbols %}
@@ -18,7 +16,7 @@ layout: default
 {% if symbol.tables.size > 0 %}
 <div class='tables'>
 {% for table in symbol.tables %}
-  {{ table }}  •
+  {{ table }}{% unless forloop.last %}  •{% endunless %}
 {% endfor %}
 </div>
 {% endif %}
@@ -32,7 +30,7 @@ layout: default
      <span class='tables'>
      (
        {% for table in column.tables %}
-         {{ table }} •
+         {{ table }}{% unless forloop.last %} •{% endunless %}
        {% endfor %}
      )
     </span>
