@@ -4,25 +4,22 @@ layout: default
 ---
 
 {% for schema in site.data.database.schemas %}
-  <a href="#{{schema.name}}">{{ schema.name }}</a> •
+  <a href="#{{schema.name}}">{{ schema.name }}</a>{% unless forloop.last %} •{% endunless %}
 {% endfor %}
 
 
 {% for schema in site.data.database.schemas %}
 <h3>{{ schema.name }} Tables</h3>
   {% for table in schema.tables %}
-     <a href="#{{table.name}}">{{ table.name }}</a>  •
+     <a href="#{{table.name}}">{{ table.name }}</a>{% unless forloop.last %}  •{% endunless %}
   {% endfor %}
 {% endfor %}
-
-<!-- todo/fix: do not include bullet for first (or last) table -->
-
 
 
 {% for schema in site.data.database.schemas %}
 <a name="{{ schema.name }}"></a><h2>{{ schema.name }} Tables</h2>
   {% for table in schema.tables %}
-     <a href="#{{table.name}}">{{ table.name }}</a>  •
+     <a href="#{{table.name}}">{{ table.name }}</a>{% unless forloop.last %}  •{% endunless %}
   {% endfor %}
 
 
