@@ -6,17 +6,17 @@ layout: default
 <h2>Symbols A-Z</h2>
 
 {% for symbol in site.data.symbols %}
-  <a href="#{{symbol.name}}">{{ symbol.name }}</a>{% unless forloop.last %}  •{% endunless %}
+  <a href="#{{symbol.name}}">{{ symbol.name }}</a>{% unless forloop.last %} •{% endunless %}
 {% endfor %}
 
 
 {% for symbol in site.data.symbols %}
-<a name="{{symbol.name}}"></a><h3>{{ symbol.name }}</h3>
+<h3 id="{{symbol.name}}">{{ symbol.name }}</h3>
 
 {% if symbol.tables.size > 0 %}
 <div class='tables'>
 {% for table in symbol.tables %}
-  {{ table }}{% unless forloop.last %}  •{% endunless %}
+  {{ table }}<a href="/#{{ table }}">↩</a>{% unless forloop.last %} •{% endunless %}
 {% endfor %}
 </div>
 {% endif %}
